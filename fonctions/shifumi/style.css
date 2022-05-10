@@ -1,0 +1,28 @@
+.pink{
+    background-color: pink;
+}
+
+.blue{
+    background-color: aquamarine;
+}
+
+.container1{
+    background-color: antiquewhite;
+    width: 50%;
+}
+
+.resultat{
+    color: rgb(185, 59, 59);
+    font-size: 2rem;
+}
+.container2{
+    background-color: paleturquoise;
+    width: 50%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.reset{
+    background-color: blueviolet;
+    color: white;
+}

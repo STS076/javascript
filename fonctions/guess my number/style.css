@@ -1,0 +1,43 @@
+body{
+    background-color:beige
+}
+
+.case1{
+    height: 100%;
+}
+
+.case2{
+    height: 100%;
+}
+
+button{
+    height: 5rem;
+    width: 5rem;
+}
+
+.btn{
+    background-color: pink;
+}
+
+input{
+    height: 5rem;
+    width: 10rem;
+}
+
+.pink{
+    color: plum;
+}
+
+.green{
+    color: greenyellow;
+    font-size: 10rem;
+}
+
+.purple{
+    color: blueviolet;
+}
+
+h1{
+    color: aquamarine;
+    text-decoration: underline;
+}
