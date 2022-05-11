@@ -15,15 +15,15 @@ let battle = document.getElementById("battle")
 let theNumber = Math.floor(Math.random() * 3)
 let tableau = ["pierre", "papier", "ciseaux"]
 
-
 function getsign (shifumi){
     let choix = document.getElementById("choix")
+    // choix.style.backgroundImage = `url("${shifumi}.png")`
     choix.innerHTML = `${shifumi}`
 }
 
 function getbattle (){
     if( choix.innerHTML == ""){
-        window.alert("veuillez faire votre choix en premier")
+        window.alert("essaye pas de tricher, fait ton choix en premier")
         resultbattle = ""
     } else {
         var resultbattle = document.getElementById("resultbattle")
@@ -48,8 +48,16 @@ function getresult(){
     }else if(choix.innerHTML =="ciseaux" && resultbattle.innerHTML == "pierre"){
         endgame.innerHTML = "looser"
     }
-    else if (choix.innerHTML == resultbattle.innerHTML ){
+    else if (choix.innerHTML == "ciseaux" && resultbattle.innerHTML == "ciseaux" ){
         endgame.innerHTML = "match nul essaye encore"
+    }else if( choix.innerHTML == "pierre" && resultbattle.innerHTML == "pierre"){
+        endgame.innerHTML  = "match nul essaye encoer"
+    }else if (choix.innerHTML == "papier" && resultbattle.innerHTML == "papier"){
+        endgame.innerHTML = "match nul essaye encore "
+    }
+    else if (choix.innerHTML == "" || resultbattle.innerHTML == ""){
+        endgame.innerHTML = ""
+        window.alert("arrête de tricher, choisi en premier")
     }
 }
 

@@ -26,3 +26,8 @@
     background-color: blueviolet;
     color: white;
 }
+
+img{
+    width: 5rem;
+    height: auto;
+}
