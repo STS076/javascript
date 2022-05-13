@@ -1,13 +1,19 @@
 .subway{
     width: 90%;
     background-color: white;
-    border: 5px solid  #FFC214;
+    border: 10px solid  #FFC214;
 }
 
-img{
-    width: 25rem; 
+.icone{
+    width: 40rem; 
     height: auto;
 }
+
+.logo{
+    width: 4rem;
+    height: auto;
+}
+
 
 ::placeholder{
     font-style: italic;
@@ -20,13 +26,5 @@ body{
 
 .inscrit{
     font-size: 0.8rem;
-}
-
-.red{
-    background-color: pink;
-}
-
-.white{
-    background-color: white;
 }
 

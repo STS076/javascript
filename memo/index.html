@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Montserrat:wght@300;500;600&family=Open+Sans:wght@400;600;800&family=Poppins:wght@300&family=Raleway:wght@300&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <h1 class="text-center mt-5">Toutes mes notes</h1>
+    <!-- <i class="bi bi-arrow-left-square ms-5" onclick="goBack()" id="back"></i> -->
+
+    <div class="container interface rounded-3 mb-5" id="welcomePage">
+        <div class="row">
+            <div class="col">
+                <p class="px-5 mt-4 fs-5">Nouvelle note</p>
+                <div class="form-group pb-5 mx-4" id="newNote">
+                    <input class="form-control py-2" id="title" placeholder="Titre">
+                    <textarea class="form-control shadow-sm bg-body rounded py-2" id="note"
+                        placeholder="Votre note"></textarea>
+                </div>
+                <button type="button" id="enregistrer" class="btn bouton text-center mx-4 mb-5"
+                    onclick="save()">Enregistrer</button>
+                <button type="button" id="remove" class="btn bouton text-center mx-4 mb-5"
+                    onclick="myremove()">Supprimer</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container interface rounded-3 mb-5" id="disapear">
+        <div class="row justify-content-evenly" id="addNote">
+            <div class="card col-lg-3 shadow-sm p-3 my-4 mx-4 col-10">
+                <div class="card-header">
+                    Ma première note
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Corps de la note.</p>
+                    <button class="btn bouton">Modifier</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+</body>
+
+</html>

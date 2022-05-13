@@ -110,7 +110,6 @@ characters.forEach(element => {
                     <p><span class="fw-bold">Arme</span>: ${element["arme"]}</p>
                 </div>
             </div>
-
 `)
 })
 

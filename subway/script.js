@@ -10,40 +10,40 @@ let page = document.getElementById("page")
 
 function validForm (){
     if (surname.value == ""){
-        errorSurname.innerHTML = `<p class="text-danger">*Merci de bien vouloir renseigner votre Nom</p>`
+        errorsurname.innerHTML = `<p class="text-danger">*Merci de bien vouloir renseigner votre Nom</p>`
         surname.style.backgroundColor = `pink`
     } else  {
-        errorSurname.innerHTML = ""
+        errorsurname.innerHTML = ""
         surname.style.backgroundColor = ""
     }
 
     if (name.value == ""){
-        errorName.innerHTML = `<p class="text-danger">*Merci de bien vouloir renseigner votre Prénom</p>`
+        errorname.innerHTML = `<p class="text-danger">*Merci de bien vouloir renseigner votre Prénom</p>`
         name.style.backgroundColor = `pink`
     } else if (name.value != ""){
-        errorName.innerHTML = ""
+        errorname.innerHTML = ""
         name.style.backgroundColor = ""
     }
 
     if(emailAddress.value == ""){
-        errorAddress.innerHTML = `<p class="text-danger">*Merci de bien vouloir renseigner votre email</p>`
+        erroremailAddress.innerHTML = `<p class="text-danger">*Merci de bien vouloir renseigner votre email</p>`
         emailAddress.style.backgroundColor = `pink`
     } else if (emailAddress.value != ""){
-        errorAddress.innerHTML = ""
+        erroremailAddress.innerHTML = ""
         emailAddress.style.backgroundColor = ""
     }
 
     if (checkbox.checked == false ){
-        errorCheckbox.innerHTML = `<p class="text-danger">*Merci de bien vouloir valider les CGU</p>`
+        errorcheckbox.innerHTML = `<p class="text-danger">*Merci de bien vouloir valider les CGU</p>`
     } else if (checkbox.checked == true){
-        errorCheckbox.innerHTML = ""
+        errorcheckbox.innerHTML = ""
     }
 
     if(password.value == ""){
-        errorPassword.innerHTML = `<p class="text-danger">*Merci de bien vouloir renseigner votre mot de passe</p>`
+        errorpassword.innerHTML = `<p class="text-danger">*Merci de bien vouloir renseigner votre mot de passe</p>`
         password.style.backgroundColor = `pink`
     }     else if (password.value != "") {
-        errorPassword.innerHTML = ""
+        errorpassword.innerHTML = ""
         password.style.backgroundColor = ""
     }
 
@@ -63,8 +63,24 @@ function validForm (){
 
     if (surname.value != "" && name.value != "" && password.value != "" && emailAddress.value != "" && confirmPassword.value == password.value && checkbox.checked == true ){
         page.innerHTML  = `<div class="container d-lg-block d-none"></div>`
-        page.innerHTML = `<div>Merci de votre inscription <span class="fw-bold">${name.value}</span>, nous venons de nous envoyer un email de confirmation à <span class="fst-italic">${emailAddress.value}</span></div>`
+        page.innerHTML = `<img src="subwaticone.ico" class="logo mb-3" alt="icone subway"><div>Merci de votre inscription <span class="fw-bold">${name.value}</span>, nous venons de nous envoyer un email de confirmation à <span class="fst-italic">${emailAddress.value}</span></div>`
     }  
+    
 }
+
+// fonction pour effacer le message d'erreur quand je rentre dans les input
+function cleanError(id){
+    // va viser les élement id dans input
+    
+    // let element = "error" + id
+    // let errormessage = document.getElementById(element)
+    let errormessage = document.getElementById("error" + id)
+    errormessage.innerHTML = ""
+    // créé une variable pour cibler les id des élement backgroundColor dans input
+    let background = document.getElementById(id)
+    background.style.backgroundColor = ""
+}
+
+
 
 
