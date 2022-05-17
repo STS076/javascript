@@ -1,12 +1,4 @@
-let newNote = document.getElementById("newNote")
-let enregistrer = document.getElementById("enregistrer")
-let addNote = document.getElementById("addNote")
-let title = document.getElementById("title")
-let note = document.getElementById("note")
-let welcomePage = document.getElementById("welcomePage")
-let back = document.getElementById("back")
-let disapear = document.getElementById("disapear")
-// let mydelete = document.getElementById("mydelete")
+let elementToAdd = document.getElementById("elementToAdd")
 let count = 6
 
 function save() {
