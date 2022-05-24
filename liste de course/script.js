@@ -16,9 +16,7 @@ function saveItem() {
     </div>`
         count++
     }
-    if (elementToAdd.value != "") {
-        elementToAdd.value = ""
-    }
+    elementToAdd.value = ""
 }
 
 function deleteItem(element) {
@@ -26,34 +24,38 @@ function deleteItem(element) {
     mycard.remove()
 }
 
+// peut mettre le let à l'intérieur ou à l'extérieur de la fonction
+// let retrieve = localStorage.getItem("monTableau")
+// retrieve = retrieve.split(",")
 function showArray() {
     let retrieve = localStorage.getItem("monTableau")
-    cartes = retrieve.split(",")
-    cartes.forEach(element => {
+    retrieve = retrieve.split(",")
+    retrieve.forEach(element => {
         arrayToShow.innerHTML += `<div class="card col-lg-3 shadow-sm p-3 my-4 mx-4 col-10" id="mycard${count}">
                 <div class="card-body">       
                 <p class="card-text">${element}</p>
                 <button class="btn bouton d-flex align-items-end" onclick="deleteItem('mycard${count}')">Supprimer</button>
             </div>
         </div>`
-        count ++
+        count++
     });
 }
 
 // function showArray() {
 //     let retrieve = localStorage.getItem("monTableau")
-//     cartes = retrieve.split(",")
-//     for (let attribut in cartes) {
+//     retrieve = retrieve.split(",")
+//     for (let attribut in retrieve) {
 //         arrayToShow.innerHTML += `<div class="card col-lg-3 shadow-sm p-3 my-4 mx-4 col-10" id="mycard${count}">
 //                       <div class="card-body">       
-//                         <p class="card-text">${cartes[attribut]}</p>
+//                         <p class="card-text">${retrieve[attribut]}</p>
 //                        <button class="btn bouton d-flex align-items-end" onclick="deleteItem('mycard${count}')">Supprimer</button>
-//                     </div>
-//                  </div>`
+//                      </div>
+//                     </div>`
 //                  count ++
 //     }
 // }
 
-
-//         // arrayToShow.innerHTML += localStorage.getItem("monTableau")
-//         // localStorage.getItem("monTableau")
+// if (localStorage.getItem("monTableau")){
+//     retrieve = localStorage.getItem("monTableau")
+//     retrieve = retrieve.split(",")
+// }
