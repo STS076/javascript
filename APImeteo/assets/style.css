@@ -1,4 +1,58 @@
-body{
-    font-family: 'Poppins'; 
-    background-color: rgb(209, 209, 209);
+body {
+    font-family: 'Poppins';
+}
+
+.couleurNav {
+    background-color: #036BA1;
+}
+
+.lh {
+    width: 100%;
+    height: auto;
+}
+
+.blue {
+    background-color: #ddf0ff;
+}
+
+.main {
+    font-size: 2rem;
+    background-color: #5FA8D3;
+}
+
+.titre {
+    font-size: 2rem;
+}
+
+@media screen and (min-width:600px) {
+    .blanc {
+        width: 80%;
+        background-color: white;
+    }
+}
+
+.pink {
+    color: #DB0084
+}
+
+.logo {
+    width: 2rem;
+    height: 2rem;
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.1) url("../assets/img/fondecran.jpg");
+    /* height: 100%; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.displaynone {
+    display: none;
+}
+
+.landingPage {
+    height: 100vh;
 }
