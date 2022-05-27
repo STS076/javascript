@@ -27,7 +27,7 @@ body {
 @media screen and (min-width:600px) {
     .blanc {
         width: 80%;
-        background-color: white;
+        background-color: rgb(255, 231, 235);
     }
 }
 
@@ -54,5 +54,10 @@ body {
 }
 
 .landingPage {
-    height: 100vh;
+    /* height: 100vh; */
+}
+
+.mapEurope{
+    width: 90%;
+    height: auto;
 }

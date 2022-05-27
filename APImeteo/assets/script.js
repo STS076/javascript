@@ -26,8 +26,7 @@ fetch("http://api.openweathermap.org/data/2.5/forecast?id=3003796&appid=1ae8433d
         for (let i = 0; i <= 0; i++) {
             // let date = data['list'][i]['dt_txt']
             weatherLH.innerHTML += `
-            
-                <div class="col-lg-8 col-10 text-light  m-2 main text-center rounded">
+                <div class="col-lg-8 col-10 text-light m-2 main text-center rounded">
                     <div>
                         <div class="p-1">${displayDate(data['list'][i]['dt_txt'])}</div>
                         <div class="p-1">${displayHours(data['list'][i]['dt_txt'])}</div>
@@ -47,10 +46,8 @@ fetch("http://api.openweathermap.org/data/2.5/forecast?id=3003796&appid=1ae8433d
             let date = data['list'][i]['dt_txt']
             let myDate = date.split(" ")
             cardLH.innerHTML += `
-            
                 <div class="card shadow-sm col-lg-2 col-10 m-1 blue rounded text-dark fw-bold">
                     <div class="p-1 text-center pink">${displayHours(data['list'][i]['dt_txt'])}</div>
-                    
                     <div class="p-1 text-center">${data['list'][i]['main']['temp']} ° C </div>
                     <div class="text-center"><img src="http://openweathermap.org/img/wn/${data['list'][i]['weather'][0]['icon']}.png"></div>
                     <div class="p-1 text-center"><i class="bi bi-wind"></i> ${data['list'][i]['wind']['speed']} km/h </div>
